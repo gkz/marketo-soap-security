@@ -1,13 +1,15 @@
 marketo-soap-security
 =====================
 
-For use with [node soap module](https://github.com/milewise/node-soap) as the security object for accessing Marketo's SOAP API.
+For use with [node soap module](https://github.com/milewise/node-soap) as the security object for accessing [Marketo](http://www.marketo.com/)'s SOAP API.
+
+Version: **0.0.2**
 
 Written in LiveScript, but accessible from JavaScript.
 
 # Exports:
 
-## MarketoSecurity
+### MarketoSecurity
 
 This is a class. Constructor parameters:
 
@@ -37,7 +39,7 @@ Use (in JavaScript):
       return client.setSecurity(MarketoSecurity('your client access ID here', 'your secret key here'));
     });
 
-## get-W3C-timestamp (getW3CTimestamp)
+### get-W3C-timestamp (getW3CTimestamp)
 
 A function. Takes a date and returns a properly formated W3C timestamp.
 
