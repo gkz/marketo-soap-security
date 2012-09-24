@@ -1,0 +1,29 @@
+{
+  "name": "marketo-soap-security",
+  "version": "0.0.1",
+  "description": "Security object for node 'soap' module for accessing Marketo's SOAP API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gkz/marketo-soap-security.git"
+  },
+  "keywords": [
+    "marketo",
+    "soap",
+    "api",
+    "security"
+  ],
+  "author": "George Zahariev <z@georgezahariev.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/gkz/marketo-soap-security/master/LICENSE"
+    }
+  ],
+  "devDependencies": {
+      "LiveScript": ">= 1.0.1"
+  }
+}
