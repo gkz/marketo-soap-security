@@ -1,6 +1,6 @@
 {
   "name": "marketo-soap-security",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Security object for node 'soap' module for accessing Marketo's SOAP API.",
   "main": "index.js",
   "scripts": {

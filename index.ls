@@ -1,3 +1,5 @@
+crypto = require \crypto
+
 export class MarketoSecurity
     (@client-access-ID, @secret-key) ~>
 

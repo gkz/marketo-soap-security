@@ -1,5 +1,6 @@
 (function(){
-  var MarketoSecurity, out$ = typeof exports != 'undefined' && exports || this;
+  var crypto, MarketoSecurity, out$ = typeof exports != 'undefined' && exports || this;
+  crypto = require('crypto');
   out$.MarketoSecurity = MarketoSecurity = (function(){
     MarketoSecurity.displayName = 'MarketoSecurity';
     var prototype = MarketoSecurity.prototype, constructor = MarketoSecurity;
