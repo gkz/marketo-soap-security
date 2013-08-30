@@ -23,7 +23,7 @@
       "url": "https://raw.github.com/gkz/marketo-soap-security/master/LICENSE"
     }
   ],
-  "dependencies": {
+  "peerDependencies": {
     "soap": "0.2.x"
   },
   "devDependencies": {
