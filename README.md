@@ -22,7 +22,7 @@ Use (in LiveScript):
     {MarketoSecurity} = require \marketo-soap-security
 
     wsdl-url = 'https://na-c.marketo.com/soap/mktows/1_7?WSDL'
-    err, client <- soap.create wsdl-url
+    err, client <- soap.createClient wsdl-url
     client.set-security MarketoSecurity do
         'your client access ID here'
         'your secret key here'
@@ -34,9 +34,17 @@ Use (in JavaScript):
     var soap, MarketoSecurity, wsdlUrl;
     soap = require('soap');
     MarketoSecurity = require('marketo-soap-security').MarketoSecurity;
+
+    // your wsdlUrl may be different: check the latest version of Marketo
+    // API and the correct access point within Marketo Admin, and update the
+    // url below before using
     wsdlUrl = 'https://na-c.marketo.com/soap/mktows/1_7?WSDL';
-    soap.create(wsdlUrl, function(err, client){
-      return client.setSecurity(MarketoSecurity('your client access ID here', 'your secret key here'));
+
+    soap.createClient(wsdlUrl, function(err, client){
+      client.setSecurity(MarketoSecurity('your client access ID here', 'your secret key here'));
+      
+      // can now use the client object to access the API.  For example:
+      console.log(client.describe());
     });
 
 ### get-W3C-timestamp (getW3CTimestamp)
