@@ -23,6 +23,9 @@
       "url": "https://raw.github.com/gkz/marketo-soap-security/master/LICENSE"
     }
   ],
+  "dependencies": {
+    "soap": "0.2.x"
+  }
   "devDependencies": {
       "LiveScript": ">= 1.0.1"
   }
